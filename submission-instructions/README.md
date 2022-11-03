@@ -1,117 +1,49 @@
 # Lab Submission Instructions
 
-Below is an example set of generic instructions, pulled from another course. Use this as your guide.
-
 ## Before You Begin
 
-> **Visualize the Application**
+**Visualize the Assignment**
 
-Evaluate the lab requirements and begin with drawing a **UML** and/or a **Data/Process Flow diagram** ([examples](https://tallyfy.com/uml-diagram/)).  Having a solid visual understanding of the code you have/need and how it connects is critical to properly approaching this assignment.
+Evaluate the lab requirements and begin by drawing a picture, topology, or flow chart if you can.  Having a solid visual understanding of what you have/need and how it connects is critical to properly approaching this assignment.
 
-> **Break Down the Assignment**
-Once you have a good visual and mental model of how the application works, break down the requirements. For each requirement, ask yourself the following questions:
+**Break Down the Assignment**
 
-- Where should this new code live in the codebase?
-- What existing code needs to be modified?
-- What dependencies will I need to install?
+Once you have a good visual and mental model of how the system works, break down the requirements. For each requirement, ask yourself the following questions:
 
-> **Map your priorities and dependencies before jumping into the code.**
+- What kind of setup do I need? Do I need to wait for a large .ova or .iso file to download before I can even start? Do I have a fresh VM or do I should I reuse one from a previous lab?
+- What is the outcome I need to achieve, and should I document it? Are there specific deliverables (pieces of information, screenshots, code, explanations) which I need to provide?
+- What parts of the lab are dependent on each other? If I get stuck on one part, what other parts of the assignment can I keep working on?
+
+**Map your priorities and dependencies before jumping into the work.**
 
 ## Common Lab Setup & Submission Instructions
 
 ### Getting Started
 
-- In the folder for each class in the class repository, you will find a `lab` folder
-- The folder for each day in the repo contains:
-  - README.md - The instructions for the lab
-  - `starter-code` folder - Contains any starter code for your lab
-- Create a new GitHub repository for each lab
-  - If there is a `starter-code` folder for the lab, **copy its contents** *(not the folder itself)* into your new repository
-- Ensure that your repository/branch is connected to and using GitHub Actions
-- For deployable labs (servers)...
-  - Ensure that your repository/branch is connected to an app at heroku.com
-    - Create a new Heroku application for each assignment that requires a server deployment
+- Make a new Google Doc and title it with the course code and assignment (i.e `ops-201d7: Lab 07 - OS Upgrade and Remote Access`)
+- **Add your name and the date at the top of the document.**
+- Look through the lab and highlight:
+  - Each setup requirement (VMs, software, online accounts).
+  - Each deliverable.
+- If a script is required as part of the lab, create a new page in your Code Challenge Github Repo, and include the link in your Google Doc.
+  > _If the script is only a line or two, you may opt to include just a screenshot or the copy-pasted code in the Google Doc, but if in doubt then include a Github link._
+- Submit a link which gives the grader "**Commenter**" access. This way we can leave comments on specific parts of the lab, which should make it easier for you to respond to us and make corrections.
 
-### Configure Your Repository
+### Create a Professional Product
 
- Configure the root of your code folder with the following files and directories. Thoughtfully name and organize any additional configuration or module files.
+When you are writing your labs, imagine that an employer might see them.
 
-- **README.md** - contains your lab documentation
-- **.env** - contains env variables (this file should be added to your .gitignore - do not commit it!)
-- **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
-- **.eslintrc** - contains the course linter configuration
-- **.eslintignore** - contains the course linter ignore configuration
-- **package.json** - contains npm package configuration
-  - create a `lint` script for running eslint (`eslint **/*.js`)
-  - create a `test` script for running tests
-  - create a `start` script for running your server
-  - create a `deploy` script (optionally) to combine any of the above steps
-- **/\_\_tests\_\_/** - contains unit tests
+**Follow these guidelines to create professional looking documents:**
 
-Setup "GitHub Actions" so that your code can be properly tested in GitHub as you make new pushes to your branches and pull requests to master
+- **Visually distinguish your contribution from the lab text.** You can use a distinctly different font, highlighting, text color, or style, just keep it professional (no comic sans, stick to standard colors).
+- **Write in full sentences.**
+- **Avoid profanity.**
+- **Use bullet points to avoid walls of text.**
+- **Include a caption for every picture.** Even if the context feels obvious to you now, it might not be to the person reading/grading it.
+- **Group your screenshots, explanations, and comments alongside the lab text they respond too.** Don't place all your work in a jumble _after_ a section of the lab you were working on.
 
-- Click the `Actions` tab in your repository
-- Select `Node.js` as the workflow
-- Edit the .yml file as follows
-  - Note the changes to the `on:` key as well as the  `node-version`
-- Commit this change
+### Corrections and Resubmits
 
-> GitHub will now run all of your automated tests (anything covered by `npm test` in your package.json) every time you push code to a branch or try to merge a pull request. In fact, it will block pull requests until your tests are all passing.
-
-```yml
-name: Node CI
-
-on: [push,pull_request]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x]
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        npm ci
-        npm run build --if-present
-        npm test
-      env:
-        CI: true
-```
-
-### Canvas Submission
-
-- Copy the README-template.md file from the reference/submission-instructions folder, rename it to `README.md` and include it in your lab repository in the root folder
-- README must include the live (deployed) URLs to your
-  - **running server** (Deployed URL)
-    - Heroku for express apps
-    - Code Sandbox for React daily labs
-    - Netlify, AWS, or Azure for React projects
-  - **API Documentation** (swagger/blueprint)
-- README should contain link to open PR on submission branch
-- Keep submission branch PR open in case of resubmit
-- Do NOT merge to master
-- Submit a Link to this README.md
-
-### Resubmits
-
-- Any commits made to submission branch will be updated in the PR
-- In event of assignment resubmission, submit submission branch PR on canvas
-- **Code Sandbox Submissions**
-  - Create a folder called `docs` (under `/public` for React apps)
-  - Upload your README.md and any supportive images to this folder.
-  - Submit a link to your `/docs/README.md` for your canvas submission
-
-## Application Specific Submission Instructions
-
-- [Node.js Applications](./node-apps.md)
-- [Express/Server Applications](./express-servers.md)
-- [React Applications](./react-apps.md)
+- Look for comments left by the grader, and make corrections or respond to them as appropriate.
+- When you are ready to have the assignment re-graded, **send your grader a message on Slack with the assignment details (or even better, a link to that assignment page in Canvas) and request that they re-evaluate your work.
+> ***There is no need to resubmit in Canvas.*** If you originally turned in your work on time, submitting it again will mark the assignment as *Late*. Just update the Google Doc and notify your grader.
