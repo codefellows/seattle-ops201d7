@@ -10,6 +10,8 @@ Proficiency with the Windows command line will help you accomplish a variety of 
 - Review Previous Lab
 - Review Previous Ops Challenge
 - Demo Today's Ops Challenge
+  - repl.it demo is linked [here](https://replit.com/@HexxKing1/Ops-201d7-Loops-1#main.sh)
+  - Please Fork this repo to your repl.it profile if you want to play with the code!
 - Lecture Today's Lab Topic
 - Demo Today's Lab Topic
 - Lab

@@ -6,6 +6,7 @@ Loops let us repeat an operation either indefinitely or for a fixed number of re
 
 ## Resources
 
+- [repl.it Demo](https://replit.com/@HexxKing1/Ops-201d7-Loops-1#main.sh)
 - [Bash loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
 - Tutorials
   - [Bash](demo/bash.md)
