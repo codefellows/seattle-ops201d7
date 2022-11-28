@@ -73,7 +73,7 @@ _Why:_
 
 Decide whose computer to use during the presentation and have that computer fully ready for practice session. Make sure you have any cables or adaptors needed, and know what settings are needed to share your screen (and audio, if relevant). Test this computer as the driver of the presentation BEFORE your practice. Test a backup computer as well, just in case.
 
-The presentation should follow exactly from the [template slide deck](https://docs.google.com/presentation/d/1jmnVceamFG8mUcP_7zaE06Ai_Jpv2nw6Io5my9m9-i0/){:target="_blank"}. Ensure your timing is no more than 15 minutes long, including some time at the end for questions. Present from the final product, deployed site, or offical documentation that you produce. Each member should introduce themselves with their personal pitch. The "About Us" page provides a great backdrop for this portion of the presentation.
+The presentation should follow exactly from the [template slide deck]([https://docs.google.com/presentation/d/1jmnVceamFG8mUcP_7zaE06Ai_Jpv2nw6Io5my9m9-i0/](https://docs.google.com/presentation/d/1jmnVceamFG8mUcP_7zaE06Ai_Jpv2nw6Io5my9m9-i0/edit?usp=sharing)){:target="_blank"}. Ensure your timing is no more than 15 minutes long, including some time at the end for questions. Present from the final product, deployed site, or offical documentation that you produce. Each member should introduce themselves with their personal pitch. The "About Us" page provides a great backdrop for this portion of the presentation.
 
 Each member of the team must have a speaking part. It is okay to use note cards if you are nervous about forgetting what to talk about. Some of the areas to discuss include:
 
